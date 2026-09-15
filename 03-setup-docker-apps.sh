@@ -106,6 +106,7 @@ if [ "$INSTALL_UNBOUND" = true ]; then
   sudo tee "$UNBOUND_CONF" > /dev/null <<EOF
 server:
   verbosity: 0
+  edns-buffer-size: 1232
   interface: 127.0.0.1
   access-control: 127.0.0.0/8 allow
   port: 5335
