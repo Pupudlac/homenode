@@ -107,6 +107,7 @@ if [ "$INSTALL_UNBOUND" = true ]; then
 server:
   verbosity: 0
   edns-buffer-size: 1232
+  edns-tcp-keepalive: yes
   interface: 127.0.0.1
   access-control: 127.0.0.0/8 allow
   port: 5335
